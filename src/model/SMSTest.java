@@ -14,11 +14,15 @@ public class SMSTest {
 	}
 	*/
 	@Test
-	
-	
 	public void testaLetraA(){
 		MensagemSMS letraA = new MensagemSMS("A");
 		assertEquals("2", letraA.getCodigos());
+	}
+	
+	@Test
+	public void testaLetraB(){
+		MensagemSMS letraB = new MensagemSMS("B");
+		assertEquals("22", letraB.getCodigos());
 	}
 
 }
