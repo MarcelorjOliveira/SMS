@@ -5,8 +5,9 @@ public class MensagemSMS {
 	private String codigos;
 	
 	public MensagemSMS(String mensagem) {
-		for(int contador = 0 ; contador < 255; contador++){
-			compila(mensagem.charAt(contador));
+		codigos = "";
+		for(int contador = 0 ; contador < mensagem.length(); contador++){
+			codigos = codigos + compila(mensagem.charAt(contador));
 		}
 	}
 	
