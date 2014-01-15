@@ -24,5 +24,11 @@ public class SMSTest {
 		MensagemSMS letraB = new MensagemSMS("B");
 		assertEquals("22", letraB.getCodigos());
 	}
+	
+	@Test
+	public void testaEspaco(){
+		MensagemSMS espaco = new MensagemSMS(" ");
+		assertEquals("0", espaco.getCodigos());
+	}
 
 }
